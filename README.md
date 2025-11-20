@@ -62,13 +62,13 @@ CREATE TABLE attendance (
     status VARCHAR(10),
     FOREIGN KEY(student_id) REFERENCES students(student_id)
 );
-🔧 JDBC Configuration
+###🔧 JDBC Configuration
 Add these lines in resources/db.properties:
 db.url=jdbc:mysql://localhost:3306/attendance_db
 db.username=root
 db.password=your_password
 db.driver=com.mysql.cj.jdbc.Driver
-▶️ How to Run
+###▶️ How to Run
 1. Clone the Repository
 git clone https://github.com/yourusername/AttendanceManagementSystem.git
 cd AttendanceManagementSystem
@@ -91,7 +91,7 @@ javac Main.java
 java Main
 OR using IDE:
 IntelliJ / Eclipse / NetBeans
-📸 Sample Output
+###📸 Sample Output
 ===== Attendance Management System =====
 1. Add Student
 2. View Students
@@ -99,22 +99,22 @@ IntelliJ / Eclipse / NetBeans
 4. View Attendance
 5. Exit
 Enter choice:
-🛠️ Technologies Used
+###🛠️ Technologies Used
 Java
 JDBC
 MySQL
 SQL
 OOP Principles
 Maven (optional)
-📂 Documentation
+###📂 Documentation
 Project presentation is available in:
 /docs/presentation.pdf
-👥 Team Members
+###👥 Team Members
 Member 1 – Roll No
 Member 2 – Roll No
 Member 3 – Roll No
-📄 License
+###📄 License
 This project is for educational purposes only.
-⭐ Contribute
+###⭐ Contribute
 Contributions are welcome!
 Feel free to open issues or submit pull requests.
