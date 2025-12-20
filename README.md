@@ -1,53 +1,27 @@
-# 📘 Attendance Management System  
-## Java Swing + JDBC + MySQL (Review-2 Ready)
-
-A fully functional **GUI-based Attendance Management System** developed using **Java**, **Swing**, **JDBC**, and **MySQL**.  
-The project follows **MVC + DAO architecture**, includes **attendance analytics**, and is structured to meet **Review-2 evaluation criteria**.
-
----
-
-## 🌟 Project Overview
-
-The Attendance Management System provides a user-friendly graphical interface to manage student records and attendance efficiently.  
-It demonstrates clean code practices, layered architecture, database integration, and innovation through analytics.
-
----
-
-## ✅ Core Features
-
-### 👨‍🎓 Student Management
-- Add new students  
-- View all students  
-- Auto-generated student IDs  
-- Course-wise records  
-
-### 📅 Attendance Management
-- Mark attendance (Present / Absent)  
-- Automatically stores date  
-- View attendance history per student  
-
-### 📊 Attendance Percentage & Analytics (Innovation)
-- Calculates attendance percentage for each student  
-- Uses SQL aggregation functions  
-- Displays analytics through GUI / service layer  
-
----
-
-## 🧠 Technical Highlights
-
-- Java Swing for GUI  
-- JDBC for database connectivity  
-- DAO (Data Access Object) pattern  
-- MVC + Service-layer architecture  
-- Modular, scalable, and maintainable code  
-- Servlet-ready backend design (Review-2)  
-
----
-
-## 🗂️ Project Structure
-
-```text
-AttendanceManagementSystem/
+# 📘 Attendance Management System
+#### Java Swing + JDBC + MySQL (Review-2)
+A fully functional GUI-based Attendance Management System developed using Java Swing, JDBC, and MySQL.
+The application allows administrators to manage students, record attendance, analyze attendance percentage, and view attendance history through a clean and interactive interface.
+## 🌟 Features
+✅ Student Management
+Add new students
+View all registered students
+Auto-generated student IDs
+Input validation for student details
+✅ Attendance Management
+Mark attendance (Present / Absent)
+Automatically records date
+View attendance history per student
+✅ Attendance Analytics (Review-2 Innovation)
+Calculate attendance percentage per student
+Real-time percentage computation
+Improves academic monitoring & reporting
+# 🧱 Architecture Highlights
+Layered Architecture (DAO, Service, UI)
+JDBC-based persistence
+Separation of concerns
+Reusable and scalable codebase
+# 🗂️ Project Structure
 │── src/
 │   ├── controller/
 │   │   ├── AttendanceServlet.java
@@ -74,23 +48,16 @@ AttendanceManagementSystem/
 │
 │── attendance.sql
 │── README.md
-
-### 🧰 Technologies Used
-
-| Technology | Purpose |
-|----------|---------|
-| Java | Programming Language |
-| Swing | GUI Development |
-| JDBC | Database Connectivity |
-| MySQL | Relational Database |
-| DAO Pattern | Data Access |
-| MVC | Code Organization |
-
----
-
-### 🗄️ Database Setup
-
-```sql
+# 🧰 Technologies Used
+Technology	Purpose
+Java	    Core Programming
+Swing	     GUI Development
+JDBC	     Database Connectivity
+MySQL	     Relational Database
+DAO Pattern	  Data Access Layer
+MVC Architecture	Code Organization
+Servlets	      Backend Integration (Review-2)
+# 🗄️ Database Setup
 CREATE DATABASE attendance_db;
 USE attendance_db;
 
@@ -106,43 +73,36 @@ CREATE TABLE attendance (
     date DATE,
     status VARCHAR(20),
     FOREIGN KEY (student_id) REFERENCES students(student_id)
-);                                                                                                                                      
-###🔧 JDBC Configuration
+);
+# 🔧 JDBC Configuration
+Create the file:
+resources/db.properties
+Add the following:
 db.url=jdbc:mysql://localhost:3306/attendance_db
 db.username=root
 db.password=YOUR_PASSWORD
 db.driver=com.mysql.cj.jdbc.Driver
-###🚀 How to Run the Project (IntelliJ IDEA)
-Open IntelliJ IDEA
-File → Open → Select project folder
-Right-click src → Mark Directory as Sources Root
-Add MySQL Connector JAR
-Run Main.java
-###🛡 Error Handling & Validation
-• Exception handling using try-catch
-• Input validation in GUI forms
-• Prevents invalid data entry and crashes
-###🧼 Code Quality & Execution
-• Layered MVC architecture
-• Clean separation of concerns
-• Reusable service methods
-• Secure JDBC access
-###🧩 Servlet Integration (Review-2)
-• AttendanceServlet and StudentServlet
-• Controller → Service → DAO workflow
-• Web-extension ready backend
-###💡 Innovation / Extra Effort
-• Attendance percentage analytics
-• Hybrid GUI + Servlet design
-• Easily extendable architecture
-###📊 Review-2 Rubric Mapping
-Evaluation Criteria	Status
-Servlet Implementation	✅
-Code Quality & Execution	✅
-Innovation / Extra Effort	✅
-###👥 Team Members
-AMANDEEP SINGH BHATIA – 24SCSE1011218
-YASH MISHRA – 24SCSE1010914
-YASH VARDHAN SINGH RANA – 24SCSE1010490
-###📄 License
-Educational purposes only.
+# 🚀 How to Run in IntelliJ IDEA
+✔ Step 1 — Open Project
+File → Open → Select AttendanceManagementSystem
+✔ Step 2 — Mark Source Root
+Right-click src → Mark Directory As → Sources Root
+✔ Step 3 — Add MySQL Connector
+File → Project Structure → Modules → Dependencies → + → Add MySQL Connector JAR
+✔ Step 4 — Run Application
+Open:
+src/Main.java
+Click Run ▶
+# 🖥️ GUI Screens
+Main Menu
+Add Student
+View Students
+Mark Attendance
+View Attendance
+Attendance Percentage Analytics
+# 👥 Team Members
+Amandeep Singh Bhatia — 24SCSE1011218
+Yash Mishra — 24SCSE1010914
+Yash Vardhan Singh Rana — 24SCSE1010490
+# 📄 License
+This project is developed strictly for educational purposes as part of academic evaluation.
