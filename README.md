@@ -75,7 +75,7 @@ AttendanceManagementSystem/
 │── attendance.sql
 │── README.md
 
-## 🧰 Technologies Used
+### 🧰 Technologies Used
 
 | Technology | Purpose |
 |----------|---------|
@@ -88,7 +88,7 @@ AttendanceManagementSystem/
 
 ---
 
-## 🗄️ Database Setup
+### 🗄️ Database Setup
 
 ```sql
 CREATE DATABASE attendance_db;
@@ -106,43 +106,43 @@ CREATE TABLE attendance (
     date DATE,
     status VARCHAR(20),
     FOREIGN KEY (student_id) REFERENCES students(student_id)
-);
-##🔧 JDBC Configuration
+);                                                                                                                                      
+###🔧 JDBC Configuration
 db.url=jdbc:mysql://localhost:3306/attendance_db
 db.username=root
 db.password=YOUR_PASSWORD
 db.driver=com.mysql.cj.jdbc.Driver
-##🚀 How to Run the Project (IntelliJ IDEA)
+###🚀 How to Run the Project (IntelliJ IDEA)
 Open IntelliJ IDEA
 File → Open → Select project folder
 Right-click src → Mark Directory as Sources Root
 Add MySQL Connector JAR
 Run Main.java
-##🛡 Error Handling & Validation
+###🛡 Error Handling & Validation
 • Exception handling using try-catch
 • Input validation in GUI forms
 • Prevents invalid data entry and crashes
-##🧼 Code Quality & Execution
+###🧼 Code Quality & Execution
 • Layered MVC architecture
 • Clean separation of concerns
 • Reusable service methods
 • Secure JDBC access
-##🧩 Servlet Integration (Review-2)
+###🧩 Servlet Integration (Review-2)
 • AttendanceServlet and StudentServlet
 • Controller → Service → DAO workflow
 • Web-extension ready backend
-##💡 Innovation / Extra Effort
+###💡 Innovation / Extra Effort
 • Attendance percentage analytics
 • Hybrid GUI + Servlet design
 • Easily extendable architecture
-##📊 Review-2 Rubric Mapping
+###📊 Review-2 Rubric Mapping
 Evaluation Criteria	Status
 Servlet Implementation	✅
 Code Quality & Execution	✅
 Innovation / Extra Effort	✅
-##👥 Team Members
+###👥 Team Members
 AMANDEEP SINGH BHATIA – 24SCSE1011218
 YASH MISHRA – 24SCSE1010914
 YASH VARDHAN SINGH RANA – 24SCSE1010490
-##📄 License
+###📄 License
 Educational purposes only.
