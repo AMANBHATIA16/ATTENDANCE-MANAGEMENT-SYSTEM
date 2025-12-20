@@ -41,5 +41,36 @@ public class AttendanceDAO {
         }
         return list;
     }
+    public double getAttendancePercentage(int studentId) {
+    double percentage = 0.0;
+
+    String totalSQL =
+        "SELECT COUNT(*) FROM attendance WHERE student_id=?";
+    String presentSQL =
+        "SELECT COUNT(*) FROM attendance WHERE student_id=? AND status='Present'";
+
+    try (Connection con = DBConnection.getConnection();
+         PreparedStatement psTotal = con.prepareStatement(totalSQL);
+         PreparedStatement psPresent = con.prepareStatement(presentSQL)) {
+
+        psTotal.setInt(1, studentId);
+        psPresent.setInt(1, studentId);
+
+        ResultSet rsTotal = psTotal.executeQuery();
+        ResultSet rsPresent = psPresent.executeQuery();
+
+        if (rsTotal.next() && rsPresent.next()) {
+            int total = rsTotal.getInt(1);
+            int present = rsPresent.getInt(1);
+
+            if (total > 0) {
+                percentage = (present * 100.0) / total;
+            }
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return percentage;
+}
 }
 
