@@ -29,5 +29,8 @@ public class AttendanceService {
     public List<Attendance> getAttendance(int studentId) {
         return attendanceDAO.getAttendance(studentId);
     }
+    public double getAttendancePercentage(int studentId) {
+        return attendanceDAO.getAttendancePercentage(studentId);
+    }
 }
 
