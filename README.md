@@ -28,7 +28,7 @@ The application allows administrators to manage students, record attendance, ana
 - Reusable and scalable codebase  
 - Clean modular design
   
-# 🗂️ Project Structure
+## 🗂️ Project Structure
 │── src/
 │   ├── controller/
 │   │   ├── AttendanceServlet.java
@@ -64,7 +64,7 @@ The application allows administrators to manage students, record attendance, ana
 - **DAO Pattern** – Data Access Layer  
 - **MVC Architecture** – Code Organization  
 - **Servlets** – Backend Processing (Review-2)
-# 🗄️ Database Setup
+## 🗄️ Database Setup
 CREATE DATABASE attendance_db;
 USE attendance_db;
 
