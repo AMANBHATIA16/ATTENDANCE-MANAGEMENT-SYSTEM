@@ -1,5 +1,5 @@
 # 📘 Attendance Management System
-#### Java Swing + JDBC + MySQL (Review-2)
+### Java Swing + JDBC + MySQL (Review-2)
 A fully functional GUI-based Attendance Management System developed using Java Swing, JDBC, and MySQL.
 The application allows administrators to manage students, record attendance, analyze attendance percentage, and view attendance history through a clean and interactive interface.
 ## ✨ Features
